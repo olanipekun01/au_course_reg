@@ -88,7 +88,7 @@
                 </form> {% endcomment %}
 
 
-                <form class='flex flex-col gap-4' method='post' action="">
+                <form class='flex flex-col gap-4' method='post' action="/register">
                     {% csrf_token %}
                     <h1>Instructor</h1>
 
@@ -106,7 +106,17 @@
 
                     <button type="submit">Sign Up</button>
                     
-                    {% comment %} <input type="text" name="email" placeholder="email"/>
+                    
+                </form>
+            </div>
+        </div>
+
+        <footer class='mt-4 bg-[#077105] text-[#fff] text-[14px] py-4 text-center'>
+            Powered by Information & Communication Technology || Achievers University Owo &copy 2024, All Rights Reserved
+        </footer>
+    </main>
+
+    {% comment %} <input type="text" name="email" placeholder="email"/>
                     <input type="text" name="name" placeholder="name" />
                     <input type="text name="department" placeholder="department" />
 
@@ -119,14 +129,6 @@
                     
 
                     {% comment %} <button class='bg-[#077105] text-[#fff] px-[15px] py-[10px] hover:bg-[#fff] hover:text-[#077105] hover:border-[1px] hover:border-[#077105]'>Submit</button> {% endcomment %}
-                </form>
-            </div>
-        </div>
-
-        <footer class='mt-4 bg-[#077105] text-[#fff] text-[14px] py-4 text-center'>
-            Powered by Information & Communication Technology || Achievers University Owo &copy 2024, All Rights Reserved
-        </footer>
-    </main>
 
     <script>
         const userTypeField = document.querySelector('select[name="user_type"]');
