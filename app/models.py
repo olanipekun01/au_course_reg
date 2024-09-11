@@ -78,7 +78,7 @@ class Course(models.Model):
     level = models.ForeignKey(Level, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.course_code} - {self.course_name}"
+        return f"{self.courseCode} - {self.title}"
 
 class Instructor(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
